@@ -7,7 +7,7 @@ INSERT INTO comunidades(nombre) VALUES ('Andalucia');
 INSERT INTO comunidades(nombre) VALUES ('Extremadura');
 INSERT INTO comunidades(nombre) VALUES ('Pais Vasco');
 
-INSERT INTO alumnos(comunidad_id,nombre,apellido,email,dni,telefono) VALUES(1,"Francisco","Garcia","fg@gmail.com","54762147U", 65478524);
-INSERT INTO alumnos(comunidad_id,nombre,apellido,email,dni,telefono) VALUES(1,"Rojas","Cabello","rb@gmail.com","5674135R", 4789625);
-INSERT INTO alumnos(comunidad_id,nombre,apellido,email,dni,telefono) VALUES(1,"Francisco","Garcia","fg@gmail.com","7746565M", 423698);
-INSERT INTO alumnos(comunidad_id,nombre,apellido,email,dni,telefono) VALUES(1,"Francisco","Garcia","fg@gmail.com","47896L", 547899);
+INSERT INTO alumnos(comunidad_id,nombre,apellido,email,dni,telefono,cp,direccion) VALUES(1,"Francisco","Garcia","fg@gmail.com","54762147U", 65478524,28791,"Calle Colomia");
+INSERT INTO alumnos(comunidad_id,nombre,apellido,email,dni,telefono,cp,direccion) VALUES(1,"Rojas","Cabello","rb@gmail.com","5674135R", 4789625,28032,"Calle Uruguay");
+INSERT INTO alumnos(comunidad_id,nombre,apellido,email,dni,telefono,cp,direccion) VALUES(1,"Francisco","Garcia","fg@gmail.com","7746565M", 423698,25792,"Calle Brasil");
+INSERT INTO alumnos(comunidad_id,nombre,apellido,email,dni,telefono,cp,direccion) VALUES(1,"Francisco","Garcia","fg@gmail.com","47896L", 547899,23061,"Calle Paraguay");

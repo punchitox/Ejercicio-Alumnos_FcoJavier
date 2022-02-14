@@ -62,7 +62,7 @@ public class AlumnoController {
 		}
 		
 		if(alumno == null) {
-			response.put("mensaje", "El cliente ID: ".concat(id.toString().concat(" no existe en la base de datos")));
+			response.put("mensaje", "El alumno ID: ".concat(id.toString().concat(" no existe en la base de datos")));
 			return new ResponseEntity<Map<String,Object>>(response,HttpStatus.NOT_FOUND);
 		}
 		
@@ -86,7 +86,7 @@ public class AlumnoController {
 			return new ResponseEntity<Map<String,Object>>(response,HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		
-		response.put("mensaje", "El cliente ha sido creado con exito!");
+		response.put("mensaje", "El alumno ha sido creado con exito!");
 		response.put("cliente", alumnoNew);
 		
 		return new ResponseEntity<Map<String,Object>>(response,HttpStatus.CREATED);
@@ -121,7 +121,7 @@ public class AlumnoController {
 			return new ResponseEntity<Map<String,Object>>(response,HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		
-		response.put("mensaje", "El cliente ha sido actualizado con exito!");
+		response.put("mensaje", "El alumno ha sido actualizado con exito!");
 		response.put("cliente", alumnoUpdate);
 		return new ResponseEntity<Map<String,Object>>(response,HttpStatus.CREATED);
 	}
@@ -134,7 +134,7 @@ public class AlumnoController {
 		Map<String,Object> response = new HashMap<>();
 		
 		if(alumnoBorrado == null) {
-			response.put("mensaje", "El cliente ID: ".concat(id.toString().concat(" no existe en la base de datos")));
+			response.put("mensaje", "El alumno ID: ".concat(id.toString().concat(" no existe en la base de datos")));
 			return new ResponseEntity<Map<String,Object>>(response,HttpStatus.NOT_FOUND);
 		}
 		
@@ -166,7 +166,7 @@ public class AlumnoController {
 		
 		
 		
-		response.put("mensaje", "El cliente ha sido borrado con exito!");
+		response.put("mensaje", "El alumno ha sido borrado con exito!");
 		response.put("cliente", alumnoBorrado);
 		return new ResponseEntity<Map<String,Object>>(response,HttpStatus.OK);
 
@@ -217,7 +217,7 @@ public class AlumnoController {
 			
 			servicio.save(alumno);
 			
-			response.put("cliente", alumno);
+			response.put("alumno", alumno);
 			response.put("mensaje", "subida correcta de imagen " + nombreArchivo);
 		} else {
 			
